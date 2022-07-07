@@ -14,7 +14,7 @@
 
   <main class="mainHome">
     
-     <textarea id="chart-text" maxlength="300">Ingrese el texto aqui...</textarea>
+     <textarea id="chart-text" maxlength="300" placeholder="Ingrese el texto aqui..."></textarea>
 
      <div class="warning">
       <img src="./images/warning.png">
@@ -22,20 +22,20 @@
     </div>
 
     <div class='buttons'>
-      <button class="button1" value="send" type="submit">Encriptar</button>
-      <button class="button2" value="send" type="submit">Desencriptar</button>
+      <button class="button1" value="send" type="submit" onclick="encriptar()">Encriptar</button>
+      <button class="button2" value="send" type="submit" onclick="desencriptar()">Desencriptar</button>
     </div >
 
 
     <div class="sidebar">
       <p id='image-message' class="searchImage"><img src="../images/searchImage.jpg" alt="search-image"></p>
       <div class="encriptedText">
-            <p class="without-message">Ningun mensaje fue encontrado</p>
-            <p class='message'>Ingresa el texto que deseas encriptar o desencriptar</p>
+            <p id='texto' class="without-message">Ningun mensaje fue encontrado</p>
+            <input type="text" id='texto2' class='message' placeholder="Ingresa el texto que deseas encriptar o desencriptar">
     </div>
 
     <textarea id="cuadro_resultado" class="resultFormat" readonly></textarea>
-                <div class="div-botton-copy"><button id="b_copiar" class="botton-copy">Copiar</button></div>
+                <div class="div-botton-copy"><button id="b_copiar" class="botton-copy" data-clipboard-target="#texto2">Copiar</button></div>
 
  </main>
 
@@ -43,6 +43,14 @@
   <footer>
    <p> Copyright Victoria Xiomara Ocampo 2022</p>
   </footer>
+
+<script src="../js/script.js" ></script>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+<script>
+  var clipboard = new ClipboardJS("#b_copiar");
+</script>
+
 </body>
 
 </html>
