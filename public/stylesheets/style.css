@@ -1,11 +1,14 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #e8ecf0;
   
 }
 
 a {
   color: #00B7FF;
+ 
+  
 }
 
 .h1{
@@ -17,9 +20,10 @@ a {
   bottom: 0%;
   background:#0A3871;
   border:red ;
+  
 }
 
-textarea{
+#chart-text{
   /*ingresar texto*/
   position: absolute;
   width: 577px;
@@ -34,6 +38,12 @@ textarea{
   line-height: 150%;
   color:#0A3871;
   border: none;
+  background: #e8ecf0;
+}
+
+#texto2{
+  border:none;
+
 }
 
 .warning{
@@ -186,7 +196,7 @@ font-size: 26px;
    line-height: 150%;
    text-align: center;
    color: #495057;
-   border-color: red;
+   
 
    /* Inside auto layout */
    flex: none;
@@ -209,9 +219,9 @@ font-size: 26px;
   width: 328px;
   height: 67px;
   left: 15%;
-  top: 885px; 
+  top: 848px; 
 
-  background: red;
+  background: #D8DFE8;
   color: #0A3871;
   border: 1px solid #0A3871;
   border-radius:  24px;
